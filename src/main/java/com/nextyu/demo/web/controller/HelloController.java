@@ -17,4 +17,9 @@ public class HelloController {
         return "hello " + name;
     }
 
+    @GetMapping("/sayHi")
+    public Object sayHi(String name) {
+        System.out.println("name: " + name);
+        return "hi " + name;
+    }
 }
